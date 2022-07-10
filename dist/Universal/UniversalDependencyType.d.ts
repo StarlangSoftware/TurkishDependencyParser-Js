@@ -59,5 +59,6 @@ export declare enum UniversalDependencyType {
     NMOD_PART = 54,
     NSUBJ_COP = 55,
     OBL_AGENT = 56,
-    OBL_TMOD = 57
+    OBL_TMOD = 57,
+    OBL_NPMOD = 58
 }

@@ -73,6 +73,7 @@
         UniversalDependencyType[UniversalDependencyType["NSUBJ_COP"] = 55] = "NSUBJ_COP";
         UniversalDependencyType[UniversalDependencyType["OBL_AGENT"] = 56] = "OBL_AGENT";
         UniversalDependencyType[UniversalDependencyType["OBL_TMOD"] = 57] = "OBL_TMOD";
+        UniversalDependencyType[UniversalDependencyType["OBL_NPMOD"] = 58] = "OBL_NPMOD";
     })(UniversalDependencyType = exports.UniversalDependencyType || (exports.UniversalDependencyType = {}));
 });
 //# sourceMappingURL=UniversalDependencyType.js.map

@@ -16,10 +16,10 @@
     const UniversalDependencyRelation_1 = require("./UniversalDependencyRelation");
     const UniversalDependencyTreeBankFeatures_1 = require("./UniversalDependencyTreeBankFeatures");
     class UniversalDependencyTreeBankSentence extends Sentence_1.Sentence {
-        constructor(sentence) {
+        constructor(language, sentence) {
             super();
             this.comments = new Array();
-            if (sentence != undefined) {
+            if (language != undefined) {
                 let lines = sentence.split("\n");
                 for (let line of lines) {
                     if (line == "") {
@@ -43,7 +43,7 @@
                                     console.log("Line does not contain universal pos ->" + line);
                                 }
                                 let xpos = items[4];
-                                let features = new UniversalDependencyTreeBankFeatures_1.UniversalDependencyTreeBankFeatures(items[5]);
+                                let features = new UniversalDependencyTreeBankFeatures_1.UniversalDependencyTreeBankFeatures(language, items[5]);
                                 let relation;
                                 if (items[6] != "_") {
                                     let to = Number.parseInt(items[6]);

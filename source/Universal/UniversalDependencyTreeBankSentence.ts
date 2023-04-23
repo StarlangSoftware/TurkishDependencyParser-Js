@@ -8,9 +8,9 @@ export class UniversalDependencyTreeBankSentence extends Sentence{
 
     private comments: Array<string> = new Array<string>()
 
-    constructor(sentence?: string) {
+    constructor(language?: string, sentence?: string) {
         super();
-        if (sentence != undefined){
+        if (language != undefined){
             let lines = sentence.split("\n")
             for (let line of lines){
                 if (line == ""){
@@ -32,7 +32,7 @@ export class UniversalDependencyTreeBankSentence extends Sentence{
                                 console.log("Line does not contain universal pos ->" + line);
                             }
                             let xpos = items[4];
-                            let features = new UniversalDependencyTreeBankFeatures(items[5]);
+                            let features = new UniversalDependencyTreeBankFeatures(language, items[5]);
                             let relation
                             if (items[6] != "_"){
                                 let to = Number.parseInt(items[6]);

@@ -35,5 +35,77 @@ describe('UniversalDependencyTreeBankCorpusTest', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_boun-ud-train.conllu");
             assert.strictEqual(7803, corpus.sentenceCount());
         });
+        it('testDependencyCorpus9', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("en_atis-ud-dev.conllu");
+            assert.strictEqual(572, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus10', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("en_atis-ud-test.conllu");
+            assert.strictEqual(586, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus11', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("en_atis-ud-train.conllu");
+            assert.strictEqual(4274, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus12', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_atis-ud-dev.conllu");
+            assert.strictEqual(572, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus13', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_atis-ud-test.conllu");
+            assert.strictEqual(586, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus14', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_atis-ud-train.conllu");
+            assert.strictEqual(4274, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus15', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_framenet-ud-dev.conllu");
+            assert.strictEqual(205, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus16', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_framenet-ud-test.conllu");
+            assert.strictEqual(205, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus17', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_framenet-ud-train.conllu");
+            assert.strictEqual(2288, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus18', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_kenet-ud-dev.conllu");
+            assert.strictEqual(1646, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus19', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_kenet-ud-test.conllu");
+            assert.strictEqual(1643, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus20', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_kenet-ud-train.conllu");
+            assert.strictEqual(15398, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus21', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_penn-ud-dev.conllu");
+            assert.strictEqual(622, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus22', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_penn-ud-test.conllu");
+            assert.strictEqual(924, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus23', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_penn-ud-train.conllu");
+            assert.strictEqual(14850, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus24', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_tourism-ud-dev.conllu");
+            assert.strictEqual(2166, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus25', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_tourism-ud-test.conllu");
+            assert.strictEqual(2191, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus26', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_tourism-ud-train.conllu");
+            assert.strictEqual(15476, corpus.sentenceCount());
+        });
     });
 });

@@ -18,11 +18,12 @@
         constructor(fileName) {
             super();
             let sentence = "";
+            this.language = fileName.substring(0, fileName.indexOf('_'));
             let data = fs.readFileSync(fileName, 'utf8');
             let lines = data.split("\n");
             for (let line of lines) {
                 if (line.length == 0) {
-                    this.addSentence(new UniversalDependencyTreeBankSentence_1.UniversalDependencyTreeBankSentence(sentence));
+                    this.addSentence(new UniversalDependencyTreeBankSentence_1.UniversalDependencyTreeBankSentence(this.language, sentence));
                     sentence = "";
                 }
                 else {

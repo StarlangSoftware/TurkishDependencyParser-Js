@@ -22743,4 +22743,3 @@
 4	oylarıyla	oy	NOUN	_	Case=Ins|Number=Plur|Number[psor]=Sing|Person=3|Person[psor]=3	5	obl	_	_
 5	geçti	geç	VERB	_	Aspect=Perf|Mood=Ind|Number=Sing|Person=3|Polarity=Pos|Tense=Past|VerbForm=Fin	0	root	_	_
 6	.	.	PUNCT	_	_	5	punct	_	_
-

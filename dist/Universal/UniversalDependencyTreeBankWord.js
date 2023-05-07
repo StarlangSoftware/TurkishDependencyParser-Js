@@ -4,16 +4,36 @@
         if (v !== undefined) module.exports = v;
     }
     else if (typeof define === "function" && define.amd) {
-        define(["require", "exports", "nlptoolkit-dictionary/dist/Dictionary/Word"], factory);
+        define(["require", "exports", "nlptoolkit-dictionary/dist/Dictionary/Word", "./UniversalDependencyRelation"], factory);
     }
 })(function (require, exports) {
     "use strict";
     Object.defineProperty(exports, "__esModule", { value: true });
     exports.UniversalDependencyTreeBankWord = void 0;
     const Word_1 = require("nlptoolkit-dictionary/dist/Dictionary/Word");
+    const UniversalDependencyRelation_1 = require("./UniversalDependencyRelation");
     class UniversalDependencyTreeBankWord extends Word_1.Word {
         constructor(id, name, lemma, upos, xpos, features, relation, deps, misc) {
-            super(name);
+            if (id == undefined) {
+                super("root");
+                this.constructor1();
+            }
+            else {
+                super(name);
+                this.constructor2(id, lemma, upos, xpos, features, relation, deps, misc);
+            }
+        }
+        constructor1() {
+            this.id = 0;
+            this.lemma = "";
+            this.upos = null;
+            this.xpos = "";
+            this.features = null;
+            this.deps = "";
+            this.misc = "";
+            this.relation = new UniversalDependencyRelation_1.UniversalDependencyRelation(-1, "DEP");
+        }
+        constructor2(id, lemma, upos, xpos, features, relation, deps, misc) {
             this.id = id;
             this.lemma = lemma;
             this.upos = upos;

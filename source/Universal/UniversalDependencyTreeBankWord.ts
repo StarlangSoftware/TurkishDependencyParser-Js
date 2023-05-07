@@ -14,18 +14,40 @@ export class UniversalDependencyTreeBankWord extends Word{
     private deps: string
     private misc: string
 
-    constructor(id: number, name: string, lemma: string, upos: UniversalDependencyPosType, xpos: string,
-                features: UniversalDependencyTreeBankFeatures, relation: UniversalDependencyRelation,
-                deps: string, misc: string) {
-        super(name);
-        this.id = id;
-        this.lemma = lemma;
-        this.upos = upos;
-        this.xpos = xpos;
-        this.deps = deps;
-        this.features = features;
-        this.relation = relation;
-        this.misc = misc;
+    constructor1(){
+        this.id = 0
+        this.lemma = ""
+        this.upos = null
+        this.xpos = ""
+        this.features = null
+        this.deps = ""
+        this.misc = ""
+        this.relation = new UniversalDependencyRelation(-1, "DEP")
+    }
+
+    constructor2(id: number, lemma: string, upos: UniversalDependencyPosType, xpos: string,
+                 features: UniversalDependencyTreeBankFeatures, relation: UniversalDependencyRelation,
+                 deps: string, misc: string) {
+        this.id = id
+        this.lemma = lemma
+        this.upos = upos
+        this.xpos = xpos
+        this.deps = deps
+        this.features = features
+        this.relation = relation
+        this.misc = misc
+    }
+
+    constructor(id?: number, name?: string, lemma?: string, upos?: UniversalDependencyPosType, xpos?: string,
+                features?: UniversalDependencyTreeBankFeatures, relation?: UniversalDependencyRelation,
+                deps?: string, misc?: string) {
+        if (id == undefined){
+            super("root");
+            this.constructor1()
+        } else {
+            super(name);
+            this.constructor2(id, lemma, upos, xpos, features, relation, deps, misc)
+        }
     }
 
     getId(): number{

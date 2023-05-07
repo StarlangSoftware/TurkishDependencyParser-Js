@@ -13,4 +13,5 @@ export declare class UniversalDependencyTreeBankFeatures {
     getFeatureValue(feature: string): string;
     featureExists(feature: string): boolean;
     toString(): string;
+    clone(): UniversalDependencyTreeBankFeatures;
 }

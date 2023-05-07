@@ -124,6 +124,9 @@
             }
             return result;
         }
+        clone() {
+            return new UniversalDependencyTreeBankFeatures("u", this.toString());
+        }
     }
     exports.UniversalDependencyTreeBankFeatures = UniversalDependencyTreeBankFeatures;
     UniversalDependencyTreeBankFeatures.universalFeatureTypes = ["PronType", "NumType", "Poss", "Reflex", "Foreign",

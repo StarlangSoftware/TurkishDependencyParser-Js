@@ -14,6 +14,7 @@ export declare class UniversalDependencyTreeBankWord extends Word {
     constructor1(): void;
     constructor2(id: number, lemma: string, upos: UniversalDependencyPosType, xpos: string, features: UniversalDependencyTreeBankFeatures, relation: UniversalDependencyRelation, deps: string, misc: string): void;
     constructor(id?: number, name?: string, lemma?: string, upos?: UniversalDependencyPosType, xpos?: string, features?: UniversalDependencyTreeBankFeatures, relation?: UniversalDependencyRelation, deps?: string, misc?: string);
+    clone(): UniversalDependencyTreeBankWord;
     getId(): number;
     getLemma(): string;
     getUpos(): UniversalDependencyPosType;

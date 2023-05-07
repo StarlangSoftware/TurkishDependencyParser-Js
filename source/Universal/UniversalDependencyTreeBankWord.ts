@@ -50,6 +50,17 @@ export class UniversalDependencyTreeBankWord extends Word{
         }
     }
 
+    clone(): UniversalDependencyTreeBankWord{
+        let word = new UniversalDependencyTreeBankWord(this.id, this.name, this.lemma, this.upos, this.xpos, null, null, this.deps, this.misc)
+        word.features = this.features.clone()
+        if (this.relation != null) {
+            word.relation = this.relation.clone()
+        } else {
+            this.relation = null
+        }
+        return word
+    }
+
     getId(): number{
         return this.id
     }

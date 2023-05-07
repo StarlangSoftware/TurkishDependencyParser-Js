@@ -213,4 +213,8 @@ export class UniversalDependencyTreeBankFeatures {
         }
         return result;
     }
+
+    clone(): UniversalDependencyTreeBankFeatures{
+        return new UniversalDependencyTreeBankFeatures("u", this.toString())
+    }
 }

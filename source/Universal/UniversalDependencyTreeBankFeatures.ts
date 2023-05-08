@@ -129,7 +129,7 @@ export class UniversalDependencyTreeBankFeatures {
         return -1;
     }
 
-    private static posIndex(uPos: string): number{
+    public static posIndex(uPos: string): number{
         let index = 0;
         for (let universalDependencyPosType of Object.values(UniversalDependencyPosType)){
             if (universalDependencyPosType.toString() == uPos){

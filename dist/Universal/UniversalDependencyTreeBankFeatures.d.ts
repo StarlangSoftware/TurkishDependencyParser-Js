@@ -6,7 +6,7 @@ export declare class UniversalDependencyTreeBankFeatures {
     private static englishFeatureValues;
     constructor(language: string, features: string);
     private static featureIndex;
-    private static posIndex;
+    static posIndex(uPos: string): number;
     static dependencyIndex(universalDependency: string): number;
     static numberOfValues(language: string, featureName: string): number;
     static featureValueIndex(language: string, featureName: string, featureValue: string): number;

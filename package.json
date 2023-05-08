@@ -1,6 +1,6 @@
 {
   "name": "nlptoolkit-dependencyparser",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Turkish Dependency Parser Library",
   "main": "index.js",
   "types": "index.js",

@@ -9,7 +9,7 @@ export class UniversalDependencyTreeBankFeatures {
         "Abbr", "Typo", "Gender", "Animacy", "NounClass",
         "Number", "Case", "Definite", "Degree", "VerbForm",
         "Mood", "Tense", "Aspect", "Voice", "Evident",
-        "Polarity", "Person", "Polite", "Clusivity"]
+        "Polarity", "Person", "Polite", "Clusivity", "NumForm"]
 
     private static universalFeatureValues = [["Art", "Dem", "Emp", "Exc", "Ind", "Int", "Neg", "Prs", "Rcp", "Rel", "Tot"],
         ["Card", "Dist", "Frac", "Mult", "Ord", "Range", "Sets"],
@@ -38,7 +38,8 @@ export class UniversalDependencyTreeBankFeatures {
         ["Neg", "Pos"],
         ["0", "1", "2", "3", "4"],
         ["Elev", "Form", "Humb", "Infm"],
-        ["Ex", "In"]]
+        ["Ex", "In"],
+        ["Word", "Digit", "Roman"]]
 
     private static turkishFeatureValues = [["Art", "Dem", "Ind", "Int", "Neg", "Prs", "Rcp", "Rel", "Tot"],
         ["Card", "Dist", "Ord"],
@@ -67,16 +68,17 @@ export class UniversalDependencyTreeBankFeatures {
         ["Neg", "Pos"],
         ["1", "2", "3"],
         [],
+        [],
         []]
 
     private static englishFeatureValues = [["Art", "Dem", "Emp", "Ind", "Int", "Neg", "Prs", "Rcp", "Rel", "Tot"],
         ["Card", "Frac", "Mult", "Ord"],
         ["Yes"],
-        [],
-        [],
+        ["Yes"],
+        ["Yes"],
 
-        [],
-        [],
+        ["Yes"],
+        ["Yes"],
         ["Fem", "Masc", "Neut"],
         [],
         [],
@@ -93,10 +95,11 @@ export class UniversalDependencyTreeBankFeatures {
         ["Pass"],
         [],
 
-        [],
+        ["Neg"],
         ["1", "2", "3"],
         [],
-        []]
+        [],
+        ["Word", "Digit", "Roman"]]
 
     constructor(language: string, features: string) {
         if (features != "_") {

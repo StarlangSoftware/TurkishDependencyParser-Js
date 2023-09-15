@@ -74,6 +74,9 @@
         UniversalDependencyType[UniversalDependencyType["OBL_AGENT"] = 56] = "OBL_AGENT";
         UniversalDependencyType[UniversalDependencyType["OBL_TMOD"] = 57] = "OBL_TMOD";
         UniversalDependencyType[UniversalDependencyType["OBL_NPMOD"] = 58] = "OBL_NPMOD";
+        UniversalDependencyType[UniversalDependencyType["NSUBJ_OUTER"] = 59] = "NSUBJ_OUTER";
+        UniversalDependencyType[UniversalDependencyType["CSUBJ_OUTER"] = 60] = "CSUBJ_OUTER";
+        UniversalDependencyType[UniversalDependencyType["ADVCL_RELCL"] = 61] = "ADVCL_RELCL";
     })(UniversalDependencyType = exports.UniversalDependencyType || (exports.UniversalDependencyType = {}));
 });
 //# sourceMappingURL=UniversalDependencyType.js.map

@@ -133,7 +133,7 @@
         "Abbr", "Typo", "Gender", "Animacy", "NounClass",
         "Number", "Case", "Definite", "Degree", "VerbForm",
         "Mood", "Tense", "Aspect", "Voice", "Evident",
-        "Polarity", "Person", "Polite", "Clusivity"];
+        "Polarity", "Person", "Polite", "Clusivity", "NumForm"];
     UniversalDependencyTreeBankFeatures.universalFeatureValues = [["Art", "Dem", "Emp", "Exc", "Ind", "Int", "Neg", "Prs", "Rcp", "Rel", "Tot"],
         ["Card", "Dist", "Frac", "Mult", "Ord", "Range", "Sets"],
         ["Yes"],
@@ -157,7 +157,8 @@
         ["Neg", "Pos"],
         ["0", "1", "2", "3", "4"],
         ["Elev", "Form", "Humb", "Infm"],
-        ["Ex", "In"]];
+        ["Ex", "In"],
+        ["Word", "Digit", "Roman"]];
     UniversalDependencyTreeBankFeatures.turkishFeatureValues = [["Art", "Dem", "Ind", "Int", "Neg", "Prs", "Rcp", "Rel", "Tot"],
         ["Card", "Dist", "Ord"],
         [],
@@ -181,14 +182,15 @@
         ["Neg", "Pos"],
         ["1", "2", "3"],
         [],
+        [],
         []];
     UniversalDependencyTreeBankFeatures.englishFeatureValues = [["Art", "Dem", "Emp", "Ind", "Int", "Neg", "Prs", "Rcp", "Rel", "Tot"],
         ["Card", "Frac", "Mult", "Ord"],
         ["Yes"],
-        [],
-        [],
-        [],
-        [],
+        ["Yes"],
+        ["Yes"],
+        ["Yes"],
+        ["Yes"],
         ["Fem", "Masc", "Neut"],
         [],
         [],
@@ -202,9 +204,10 @@
         [],
         ["Pass"],
         [],
-        [],
+        ["Neg"],
         ["1", "2", "3"],
         [],
-        []];
+        [],
+        ["Word", "Digit", "Roman"]];
 });
 //# sourceMappingURL=UniversalDependencyTreeBankFeatures.js.map

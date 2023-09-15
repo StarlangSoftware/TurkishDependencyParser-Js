@@ -107,5 +107,13 @@ describe('UniversalDependencyTreeBankCorpusTest', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_tourism-ud-train.conllu");
             assert.strictEqual(15476, corpus.sentenceCount());
         });
+        it('testDependencyCorpus27', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("en_ewt-ud-dev.conllu");
+            assert.strictEqual(2001, corpus.sentenceCount());
+        });
+        it('testDependencyCorpus28', function() {
+            let corpus = new UniversalDependencyTreeBankCorpus("en_ewt-ud-test.conllu");
+            assert.strictEqual(2077, corpus.sentenceCount());
+        });
     });
 });

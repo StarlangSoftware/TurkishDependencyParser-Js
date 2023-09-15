@@ -87,7 +87,8 @@
         "NSUBJ:PASS", "CSUBJ:PASS", "NMOD:NPMOD", "NMOD:POSS",
         "NMOD:TMOD", "ADVMOD:EMPH", "AUX:Q", "COMPOUND:LVC",
         "COMPOUND:REDUP", "CSUBJ:COP", "NMOD:COMP", "NMOD:PART",
-        "NSUBJ:COP", "OBL:AGENT", "OBL:TMOD", "OBL:NPMOD"];
+        "NSUBJ:COP", "OBL:AGENT", "OBL:TMOD", "OBL:NPMOD", "NSUBJ:OUTER",
+        "CSUBJ:OUTER", "ADVCL:RELCL"];
     UniversalDependencyRelation.universalDependencyTags = [UniversalDependencyType_1.UniversalDependencyType.ACL, UniversalDependencyType_1.UniversalDependencyType.ADVCL,
         UniversalDependencyType_1.UniversalDependencyType.ADVMOD, UniversalDependencyType_1.UniversalDependencyType.AMOD, UniversalDependencyType_1.UniversalDependencyType.APPOS, UniversalDependencyType_1.UniversalDependencyType.AUX, UniversalDependencyType_1.UniversalDependencyType.CASE,
         UniversalDependencyType_1.UniversalDependencyType.CC, UniversalDependencyType_1.UniversalDependencyType.CCOMP, UniversalDependencyType_1.UniversalDependencyType.CLF, UniversalDependencyType_1.UniversalDependencyType.COMPOUND, UniversalDependencyType_1.UniversalDependencyType.CONJ,
@@ -101,7 +102,8 @@
         UniversalDependencyType_1.UniversalDependencyType.NSUBJ_PASS, UniversalDependencyType_1.UniversalDependencyType.CSUBJ_PASS, UniversalDependencyType_1.UniversalDependencyType.NMOD_NPMOD, UniversalDependencyType_1.UniversalDependencyType.NMOD_POSS,
         UniversalDependencyType_1.UniversalDependencyType.NMOD_TMOD, UniversalDependencyType_1.UniversalDependencyType.ADVMOD_EMPH, UniversalDependencyType_1.UniversalDependencyType.AUX_Q, UniversalDependencyType_1.UniversalDependencyType.COMPOUND_LVC,
         UniversalDependencyType_1.UniversalDependencyType.COMPOUND_REDUP, UniversalDependencyType_1.UniversalDependencyType.CSUBJ_COP, UniversalDependencyType_1.UniversalDependencyType.NMOD_COMP, UniversalDependencyType_1.UniversalDependencyType.NMOD_PART,
-        UniversalDependencyType_1.UniversalDependencyType.NSUBJ_COP, UniversalDependencyType_1.UniversalDependencyType.OBL_AGENT, UniversalDependencyType_1.UniversalDependencyType.OBL_TMOD, UniversalDependencyType_1.UniversalDependencyType.OBL_NPMOD];
+        UniversalDependencyType_1.UniversalDependencyType.NSUBJ_COP, UniversalDependencyType_1.UniversalDependencyType.OBL_AGENT, UniversalDependencyType_1.UniversalDependencyType.OBL_TMOD, UniversalDependencyType_1.UniversalDependencyType.OBL_NPMOD,
+        UniversalDependencyType_1.UniversalDependencyType.NSUBJ_OUTER, UniversalDependencyType_1.UniversalDependencyType.CSUBJ_OUTER, UniversalDependencyType_1.UniversalDependencyType.ADVCL_RELCL];
     UniversalDependencyRelation.universalDependencyPosTypes = ["ADJ", "ADV", "INTJ", "NOUN", "PROPN", "VERB", "ADP", "AUX", "CCONJ",
         "DET", "NUM", "PART", "PRON", "SCONJ", "PUNCT", "SYM", "X"];
     UniversalDependencyRelation.universalDependencyPosTags = [UniversalDependencyPosType_1.UniversalDependencyPosType.ADJ, UniversalDependencyPosType_1.UniversalDependencyPosType.ADV, UniversalDependencyPosType_1.UniversalDependencyPosType.INTJ, UniversalDependencyPosType_1.UniversalDependencyPosType.NOUN, UniversalDependencyPosType_1.UniversalDependencyPosType.PROPN,

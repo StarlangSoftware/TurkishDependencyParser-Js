@@ -16,6 +16,13 @@
     const UniversalDependencyRelation_1 = require("./UniversalDependencyRelation");
     const UniversalDependencyTreeBankFeatures_1 = require("./UniversalDependencyTreeBankFeatures");
     class UniversalDependencyTreeBankSentence extends Sentence_1.Sentence {
+        /**
+         * Constructor for the UniversalDependencyTreeBankSentence.  Get a line as input and splits the line wrt tab
+         * character. The number of items should be 10. The items are id, surfaceForm, lemma, upos, xpos, feature list,
+         * head word index, dependency type, external dependencies and miscellaneous things for one word.
+         * @param language Language name. Currently, 'en' and 'tr' languages are supported.
+         * @param sentence Sentence string to be processed.
+         */
         constructor(language, sentence) {
             super();
             this.comments = new Array();
@@ -63,9 +70,17 @@
                 }
             }
         }
+        /**
+         * Adds a comment string to comments array list.
+         * @param comment Comment to be added.
+         */
         addComment(comment) {
             this.comments.push(comment);
         }
+        /**
+         * Overridden toString method. Concatenates the strings of words to get the string of a sentence.
+         * @return Concatenation of the strings of thw strings of words.
+         */
         toString() {
             let result = "";
             for (let comment of this.comments) {
@@ -77,6 +92,12 @@
             }
             return result;
         }
+        /**
+         * Compares the sentence with the given sentence and returns a parser evaluation score for this comparison. The result
+         * is calculated by summing up the parser evaluation scores of word by word dpendency relation comparisons.
+         * @param sentence Universal dependency sentence to be compared.
+         * @return A parser evaluation score object.
+         */
         compareParses(sentence) {
             let score = new ParserEvaluationScore_1.ParserEvaluationScore();
             for (let i = 0; i < this.words.length; i++) {

@@ -15,6 +15,11 @@
     const UniversalDependencyTreeBankSentence_1 = require("./UniversalDependencyTreeBankSentence");
     const ParserEvaluationScore_1 = require("../ParserEvaluationScore");
     class UniversalDependencyTreeBankCorpus extends Corpus_1.Corpus {
+        /**
+         * Constructs a universal dependency corpus from an input file. Reads the sentences one by one and constructs a
+         * universal dependency sentence from each line read.
+         * @param fileName Input file name.
+         */
         constructor(fileName) {
             super();
             if (fileName != undefined) {
@@ -33,6 +38,12 @@
                 }
             }
         }
+        /**
+         * Compares the corpus with the given corpus and returns a parser evaluation score for this comparison. The result
+         * is calculated by summing up the parser evaluation scores of sentence by sentence comparisons.
+         * @param corpus Universal dependency corpus to be compared.
+         * @return A parser evaluation score object.
+         */
         compareParses(corpus) {
             let score = new ParserEvaluationScore_1.ParserEvaluationScore();
             for (let i = 0; i < this.sentences.length; i++) {

@@ -23,6 +23,9 @@
                 this.constructor2(id, lemma, upos, xpos, features, relation, deps, misc);
             }
         }
+        /**
+         * Default constructor for the universal dependency word. Sets the attributes to default values.
+         */
         constructor1() {
             this.id = 0;
             this.lemma = "";
@@ -33,6 +36,17 @@
             this.misc = "";
             this.relation = new UniversalDependencyRelation_1.UniversalDependencyRelation(-1, "DEP");
         }
+        /**
+         * Constructor of the universal dependency word. Sets the attributes.
+         * @param id Id of the word
+         * @param lemma Lemma of the word
+         * @param upos Universal part of speech tag.
+         * @param xpos Extra part of speech tag
+         * @param features Feature list of the word
+         * @param relation Universal dependency relation of the word
+         * @param deps External dependencies for the word
+         * @param misc Miscellaneous information for the word.
+         */
         constructor2(id, lemma, upos, xpos, features, relation, deps, misc) {
             this.id = id;
             this.lemma = lemma;
@@ -54,36 +68,82 @@
             }
             return word;
         }
+        /**
+         * Accessor for the id attribute.
+         * @return Id attribute
+         */
         getId() {
             return this.id;
         }
+        /**
+         * Accessor for the lemma attribute
+         * @return Lemma attribute
+         */
         getLemma() {
             return this.lemma;
         }
+        /**
+         * Accessor for the upos attribute
+         * @return Upos attribute
+         */
         getUpos() {
             return this.upos;
         }
+        /**
+         * Accessor for the xpos attribute
+         * @return Xpos attribute
+         */
         getXpos() {
             return this.xpos;
         }
+        /**
+         * Accessor for the features attribute
+         * @return Features attribute
+         */
         getFeatures() {
             return this.features;
         }
+        /**
+         * Gets the value of a given feature.
+         * @param featureName Name of the feature
+         * @return Value of the feature
+         */
         getFeatureValue(featureName) {
             return this.features.getFeatureValue(featureName);
         }
+        /**
+         * Checks if the given feature exists.
+         * @param featureName Name of the feature
+         * @return True if the given feature exists, false otherwise.
+         */
         featureExists(featureName) {
             return this.features.featureExists(featureName);
         }
+        /**
+         * Accessor for the relation attribute.
+         * @return Relation attribute
+         */
         getRelation() {
             return this.relation;
         }
+        /**
+         * Mutator for the relation attribute
+         * @param relation New relation attribute
+         */
         setRelation(relation) {
             this.relation = relation;
         }
+        /**
+         * Accessor for the deps attribute
+         * @return Xpos attribute
+         */
         getDeps() {
             return this.deps;
         }
+        /**
+         * Accessor for the misc attribute
+         * @return Misc attribute
+         */
         getMisc() {
             return this.misc;
         }

@@ -14,6 +14,11 @@
     const XmlDocument_1 = require("nlptoolkit-xmlparser/dist/XmlDocument");
     const TurkishDependencyTreeBankSentence_1 = require("./TurkishDependencyTreeBankSentence");
     class TurkishDependencyTreeBankCorpus extends Corpus_1.Corpus {
+        /**
+         * Another constructor for {@link TurkishDependencyTreeBankCorpus}. The method gets the corpus as a xml file, and
+         * reads sentences one by one. For each sentence, the function constructs a TurkishDependencyTreeBankSentence.
+         * @param fileName Input file name to read the TurkishDependencyTreeBankCorpus.
+         */
         constructor(fileName) {
             super();
             let doc = new XmlDocument_1.XmlDocument(fileName);

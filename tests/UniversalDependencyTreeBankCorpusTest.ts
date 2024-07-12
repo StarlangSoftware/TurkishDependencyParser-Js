@@ -5,19 +5,19 @@ describe('UniversalDependencyTreeBankCorpusTest', function() {
     describe('UniversalDependencyTreeBankCorpusTest', function() {
         it('testDependencyCorpus1', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_gb-ud-test.conllu");
-            assert.strictEqual(2802, corpus.sentenceCount());
+            assert.strictEqual(2880, corpus.sentenceCount());
         });
         it('testDependencyCorpus2', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_imst-ud-dev.conllu");
-            assert.strictEqual(988, corpus.sentenceCount());
+            assert.strictEqual(1100, corpus.sentenceCount());
         });
         it('testDependencyCorpus3', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_imst-ud-test.conllu");
-            assert.strictEqual(983, corpus.sentenceCount());
+            assert.strictEqual(1100, corpus.sentenceCount());
         });
         it('testDependencyCorpus4', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_imst-ud-train.conllu");
-            assert.strictEqual(3664, corpus.sentenceCount());
+            assert.strictEqual(3435, corpus.sentenceCount());
         });
         it('testDependencyCorpus5', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_pud-ud-test.conllu");
@@ -105,7 +105,7 @@ describe('UniversalDependencyTreeBankCorpusTest', function() {
         });
         it('testDependencyCorpus26', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("tr_tourism-ud-train.conllu");
-            assert.strictEqual(15476, corpus.sentenceCount());
+            assert.strictEqual(15473, corpus.sentenceCount());
         });
         it('testDependencyCorpus27', function() {
             let corpus = new UniversalDependencyTreeBankCorpus("en_ewt-ud-dev.conllu");

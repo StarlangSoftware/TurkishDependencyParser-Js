@@ -28,7 +28,7 @@
                 let data = fs.readFileSync(fileName, 'utf8');
                 let lines = data.split("\n");
                 for (let line of lines) {
-                    if (line.length == 0) {
+                    if (line.length == 0 && sentence.length != 0) {
                         this.addSentence(new UniversalDependencyTreeBankSentence_1.UniversalDependencyTreeBankSentence(this.language, sentence));
                         sentence = "";
                     }

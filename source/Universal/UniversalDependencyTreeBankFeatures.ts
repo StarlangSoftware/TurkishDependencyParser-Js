@@ -45,10 +45,10 @@ export class UniversalDependencyTreeBankFeatures {
         ["Card", "Dist", "Ord"],
         [],
         ["Yes"],
-        [],
+        ["Yes"],
 
         ["Yes"],
-        [],
+        ["Yes"],
         [],
         [],
         [],
@@ -67,7 +67,7 @@ export class UniversalDependencyTreeBankFeatures {
 
         ["Neg", "Pos"],
         ["1", "2", "3"],
-        [],
+        ["Form", "Infm"],
         [],
         []]
 

@@ -7,6 +7,7 @@ import {UniversalDependencyTreeBankFeatures} from "./UniversalDependencyTreeBank
 export class UniversalDependencyTreeBankSentence extends Sentence{
 
     private comments: Array<string> = new Array<string>()
+    private splits: Array<string> = new Array<string>();
 
     /**
      * Constructor for the UniversalDependencyTreeBankSentence.  Get a line as input and splits the line wrt tab
@@ -53,6 +54,10 @@ export class UniversalDependencyTreeBankSentence extends Sentence{
                             let word = new UniversalDependencyTreeBankWord(Number.parseInt(id), surfaceForm,
                                 lemma, upos, xpos, features, relation, deps, misc);
                             this.addWord(word);
+                        } else {
+                            if (id.match("^\\d+-\\d+$")){
+                                this.splits.push(id);
+                            }
                         }
                     }
                 }
@@ -66,6 +71,23 @@ export class UniversalDependencyTreeBankSentence extends Sentence{
      */
     addComment(comment: string){
         this.comments.push(comment)
+    }
+
+    /**
+     * Returns number of splits in the sentence
+     * @return Number of splits in the sentence
+     */
+    splitSize(): number{
+        return this.splits.length
+    }
+
+    /**
+     * Returns the split at position index
+     * @param index Position
+     * @return The split at position index
+     */
+    getSplit(index: number): string{
+        return this.splits[index];
     }
 
     /**

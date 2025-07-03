@@ -26,6 +26,7 @@
         constructor(language, sentence) {
             super();
             this.comments = new Array();
+            this.splits = new Array();
             if (language != undefined) {
                 let lines = sentence.split("\n");
                 for (let line of lines) {
@@ -65,6 +66,11 @@
                                 let word = new UniversalDependencyTreeBankWord_1.UniversalDependencyTreeBankWord(Number.parseInt(id), surfaceForm, lemma, upos, xpos, features, relation, deps, misc);
                                 this.addWord(word);
                             }
+                            else {
+                                if (id.match("^\\d+-\\d+$")) {
+                                    this.splits.push(id);
+                                }
+                            }
                         }
                     }
                 }
@@ -76,6 +82,21 @@
          */
         addComment(comment) {
             this.comments.push(comment);
+        }
+        /**
+         * Returns number of splits in the sentence
+         * @return Number of splits in the sentence
+         */
+        splitSize() {
+            return this.splits.length;
+        }
+        /**
+         * Returns the split at position index
+         * @param index Position
+         * @return The split at position index
+         */
+        getSplit(index) {
+            return this.splits[index];
         }
         /**
          * Overridden toString method. Concatenates the strings of words to get the string of a sentence.

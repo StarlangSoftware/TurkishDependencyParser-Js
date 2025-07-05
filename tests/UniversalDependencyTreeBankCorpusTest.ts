@@ -8,15 +8,15 @@ describe('UniversalDependencyTreeBankCorpusTest', function() {
             assert.strictEqual(2880, corpus.sentenceCount());
         });
         it('testDependencyCorpus2', function() {
-            let corpus = new UniversalDependencyTreeBankCorpus("tr_imst-ud-dev.conllu");
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_imst2-ud-dev.conllu");
             assert.strictEqual(1100, corpus.sentenceCount());
         });
         it('testDependencyCorpus3', function() {
-            let corpus = new UniversalDependencyTreeBankCorpus("tr_imst-ud-test.conllu");
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_imst2-ud-test.conllu");
             assert.strictEqual(1100, corpus.sentenceCount());
         });
         it('testDependencyCorpus4', function() {
-            let corpus = new UniversalDependencyTreeBankCorpus("tr_imst-ud-train.conllu");
+            let corpus = new UniversalDependencyTreeBankCorpus("tr_imst2-ud-train.conllu");
             assert.strictEqual(3435, corpus.sentenceCount());
         });
         it('testDependencyCorpus5', function() {

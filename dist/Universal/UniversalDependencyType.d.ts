@@ -63,5 +63,6 @@ export declare enum UniversalDependencyType {
     OBL_NPMOD = 58,
     NSUBJ_OUTER = 59,
     CSUBJ_OUTER = 60,
-    ADVCL_RELCL = 61
+    ADVCL_RELCL = 61,
+    OBL_UNMARKED = 62
 }

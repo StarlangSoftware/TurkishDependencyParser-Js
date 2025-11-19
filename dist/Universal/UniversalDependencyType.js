@@ -77,6 +77,7 @@
         UniversalDependencyType[UniversalDependencyType["NSUBJ_OUTER"] = 59] = "NSUBJ_OUTER";
         UniversalDependencyType[UniversalDependencyType["CSUBJ_OUTER"] = 60] = "CSUBJ_OUTER";
         UniversalDependencyType[UniversalDependencyType["ADVCL_RELCL"] = 61] = "ADVCL_RELCL";
+        UniversalDependencyType[UniversalDependencyType["OBL_UNMARKED"] = 62] = "OBL_UNMARKED";
     })(UniversalDependencyType = exports.UniversalDependencyType || (exports.UniversalDependencyType = {}));
 });
 //# sourceMappingURL=UniversalDependencyType.js.map

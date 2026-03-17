@@ -18,7 +18,7 @@ For Developers
 ============
 You can also see either [Java](https://github.com/starlangsoftware/TurkishDependencyParser), [Python](https://github.com/starlangsoftware/TurkishDependencyParser-Py), 
 [Cython](https://github.com/starlangsoftware/TurkishDependencyParser-Cy), [C++](https://github.com/starlangsoftware/TurkishDependencyParser-CPP), [C](https://github.com/starlangsoftware/TurkishDependencyParser-C),
-[Swift](https://github.com/starlangsoftware/TurkishDependencyParser-Swift), or [C#](https://github.com/starlangsoftware/TurkishDependencyParser-CS) repository.
+[Swift](https://github.com/starlangsoftware/TurkishDependencyParser-Swift), [Php](https://github.com/starlangsoftware/TurkishDependencyParser-Php), or [C#](https://github.com/starlangsoftware/TurkishDependencyParser-CS) repository.
 
 ## Requirements
 
